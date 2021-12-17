@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+    <head>
+        <title>
+
+        </title>
+        <style>
+.maincontainer{
+    position:relative;
+    width:250px;
+    height:320px;
+    /* background-color: green; */
+    /*
+    for center main container
+    position: absolute;
+width: 250px;
+height: 320px;
+background-color: green;
+top: 117px;
+left: 373px*/
+}
+.thecard{
+    position:absolute;
+width:100%;
+height:100%;
+transform-style: preserve-3d;
+transition: all 0.5s ease;
+}
+.thecard:hover{
+    transform: rotateY(180deg);
+}
+.thefront{
+    position:absolute;
+    width:100%;
+    height:100%;
+    backface-visibility: hidden;
+background: #ffc728;
+color:#333;
+text-align: center;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+border-radius: 20px;
+font-size: 18px;
+font-weight: bold;
+}
+.theback{
+    position:absolute;
+    width:100%;
+    height:100%;
+    backface-visibility: hidden;
+background: #5fcf80;
+color: #fff;
+text-align: center;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+border-radius: 20px;
+font-size: 18px;
+font-weight: bold;
+transform: rotateY(180deg);
+}
+
+        </style>
+    </head>
+    <body>
+        <div class="maincontainer">
+            <div class="thecard">
+                <div class="thefront">front</div>
+                    <div class="theback"> back
+                        </div>
+                
+            </div>
+        </div>
+    </body>
+</html>
